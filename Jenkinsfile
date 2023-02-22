@@ -2,9 +2,7 @@ pipeline {
     agent any
     stages {
         stage('ssh') {
-            steps{
-                ([$class: 'WsCleanup'])
-            }
+            
             steps {
                 script{
                      
